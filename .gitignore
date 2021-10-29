@@ -3,3 +3,5 @@ cmake-build*
 node_modules
 *.cpp.o
 website/emscripten/
+website/php/
+website/index.php
