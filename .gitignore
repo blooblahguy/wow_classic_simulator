@@ -4,4 +4,5 @@ node_modules
 *.cpp.o
 website/emscripten/
 website/php/
+website/parts/
 website/index.php
