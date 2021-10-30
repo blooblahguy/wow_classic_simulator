@@ -2,6 +2,7 @@
 #max_optimize_time_dd {width: auto; }
 
 .collapsible {padding: 1.3rem; margin: -1.3rem;}
+.collapsible.active {background-color: rgba(52, 147, 211, 0.20)}
 
 /* talents */
 .icon {

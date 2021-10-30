@@ -34,6 +34,14 @@ let coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
 	coll[i].addEventListener("click", function () {
+		// remove active from other collapsibles even after hiding them
+		var others = document.getElementsByClassName("collapsible");
+		for (var i = 0; i < others.length; i++) {
+			if (others.item(i) !== this) {
+				others.item(i).classList.remove("active");
+			}
+		}
+
 		this.classList.toggle("active");
 		let content = this.nextElementSibling;
 		if (content.style.display === "block") {
