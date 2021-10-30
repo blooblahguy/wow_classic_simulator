@@ -1,1 +1,43 @@
 .cursor {cursor: pointer; }
+#max_optimize_time_dd {width: auto; }
+
+.collapsible {padding: 1.3rem; margin: -1.3rem;}
+
+/* talents */
+.icon {
+	width: 36px;
+	height: 36px;
+	position: relative;
+	margin: 1px;
+	user-select: none;
+	border: 2px solid #fcfff9;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	transition: border-color .2s ease-in;
+}
+
+.icon:before {
+	content: attr(data-disp);
+	position: absolute;
+	right: -4px;
+	bottom: -4px;
+	background: #000;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	text-align: center;
+	z-index: 3;
+	font-size: 11px;
+	padding: 1px 3px;
+	color: #7fffb6;
+}
+
+.icon:after {
+	content: "";
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 4px;
+}
